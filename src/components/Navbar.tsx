@@ -2,7 +2,7 @@ import { CartButton, LinksDropdown, Logo, ModelToggle, NavLinks } from ".";
 
 const Navbar = () => {
   return (
-    <nav className="bg-muted px-20 py-4">
+    <nav className="bg-muted px-40 py-4">
       <div className="align-middle flex justify-between items-center">
         <Logo />
         <LinksDropdown />

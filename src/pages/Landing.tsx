@@ -1,4 +1,4 @@
-import { FeaturedProducts, Hero, HeroCarousel } from "@/components";
+import { FeaturedProducts, Hero } from "@/components";
 import { useLoaderData, type LoaderFunction } from "react-router-dom";
 import { customFetch, type ProductsResponse } from "@/utils";
 

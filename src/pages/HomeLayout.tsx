@@ -7,7 +7,7 @@ function HomeLayout() {
       <Header></Header>
 
       <Navbar />
-      <div className="items-center align-middle p-20">
+      <div className="items-center align-middle px-40 py-20">
         <Outlet />
       </div>
     </>
