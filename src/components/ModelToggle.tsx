@@ -1,11 +1,11 @@
 import { Sun, Moon } from "lucide-react";
-import { Button } from "./ui/button";
+import { Button } from "./ui/Button";
 import {
   DropdownMenu,
   DropdownMenuTrigger,
   DropdownMenuContent,
   DropdownMenuItem
-} from "./ui/dropdown-menu";
+} from "./ui/Dropdown-Menu";
 
 import { useDispatch } from "react-redux";
 import { setTheme } from "@/slices/theme/themeSlice";

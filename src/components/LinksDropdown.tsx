@@ -3,9 +3,9 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger
-} from "@/components/ui/dropdown-menu";
+} from "@/components/ui/Dropdown-Menu";
 import { AlignLeft } from "lucide-react";
-import { Button } from "./ui/button";
+import { Button } from "./ui/Button";
 import { links } from "@/utils";
 import { NavLink } from "react-router-dom";
 
