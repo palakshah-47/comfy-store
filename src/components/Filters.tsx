@@ -1,8 +1,10 @@
 import { Form, useLoaderData, Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/Button";
 import { ProductResponseWithParams } from "@/utils";
 import FormInput from "./FormInput";
 import FormSelect from "./FormSelect";
+import FormRange from "./FormRange";
+import FormCheckbox from "./FormCheckbox";
 
 function Filters() {
   const { meta, params } = useLoaderData() as ProductResponseWithParams;
@@ -40,6 +42,15 @@ function Filters() {
         options={["a-z", "z-a", "high", "low"]}
         defaultValue={order}
       />
+      {/* PRICE*/}
+      <FormRange label="price" name="price" defaultValue={price} />
+
+      {/* SHIPPING */}
+      <FormCheckbox
+        label="free shipping"
+        name="shipping"
+        defaultValue={shipping}
+      ></FormCheckbox>
       <Button type="submit" size="sm" className="self-end mb-2">
         Search
       </Button>

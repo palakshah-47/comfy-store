@@ -7,11 +7,9 @@ import {
 } from "@/components/ui/Select";
 
 import { Label } from "@/components/ui/Label";
+import { FormProps } from "@/utils";
 
-type SelectInputProps = {
-  name: string;
-  label?: string;
-  defaultValue?: string;
+type SelectInputProps = FormProps & {
   options: string[];
 };
 
