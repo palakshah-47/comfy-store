@@ -3,7 +3,7 @@ import ProductsList from "./ProductsList";
 import { type ProductsResponse } from "@/utils";
 import { LayoutGrid, List } from "lucide-react";
 import { useState } from "react";
-import { Button } from "./ui/button";
+import { Button } from "./ui/Button";
 import { Separator } from "./ui/Separator";
 import ProductsGrid from "./ProductsGrid";
 
