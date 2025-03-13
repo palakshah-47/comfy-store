@@ -1,3 +1,4 @@
+import SingleProduct from "../pages/SingleProduct";
 export type ProductsResponse = {
   data: Product[];
   meta: ProductsMeta;
@@ -50,4 +51,9 @@ export type FormProps = {
   name: string;
   label?: string;
   defaultValue?: string;
-}
+};
+
+export type SingleProductResponse = {
+  data: Product;
+  meta: {};
+};
