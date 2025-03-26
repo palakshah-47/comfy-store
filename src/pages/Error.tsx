@@ -2,8 +2,7 @@ import { useRouteError, Link, isRouteErrorResponse } from "react-router-dom";
 import { Button } from "@/components/ui/Button";
 
 function Error() {
-  const error = useRouteError();
-  console.log(error);
+  const error = useRouteError(); 
   if (isRouteErrorResponse(error) && error.status === 404) {
     return (
       <main className="grid min-h-[100vh] place-items-center px-8">
