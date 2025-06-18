@@ -1,6 +1,11 @@
 import { useAppSelector } from "@/hooks";
 import { Card } from "./ui/Card";
-import { FirstColumn, SecondColumn, ThirdColumn, FourthColumn } from "./CartItemColumns";
+import {
+  FirstColumn,
+  SecondColumn,
+  ThirdColumn,
+  FourthColumn
+} from "./CartItemColumns";
 
 export default function CartItemsList() {
   const cartItems = useAppSelector((state) => state.cartState.cartItems);
@@ -16,7 +21,11 @@ export default function CartItemsList() {
             className="flex flex-col gap-y-4 sm:flex-row flex-wrap p-6 mb-8"
           >
             <FirstColumn image={image} title={title} />
-            <SecondColumn title={title} company={company} productColor={productColor} />
+            <SecondColumn
+              title={title}
+              company={company}
+              productColor={productColor}
+            />
             <ThirdColumn amount={amount} cartID={cartID} />
             <FourthColumn price={price} />
           </Card>

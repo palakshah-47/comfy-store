@@ -1,3 +1,4 @@
+
 export { default as Header } from "./Header";
 export { default as Navbar } from "./Navbar";
 export { default as Logo } from "./Logo";
@@ -23,3 +24,4 @@ export { default as SelectProductColor } from "./SelectProductColor";
 export { default as SelectProductAmount } from "./SelectProductAmount";
 export { default as CartTotals } from "./CartTotals";
 export { default as CartItemsList } from "./CartItemsList";
+export { default as SubmitBtn } from "./SubmitBtn";
