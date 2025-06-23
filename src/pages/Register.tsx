@@ -1,4 +1,4 @@
-import { FormInput } from "@/components";
+import { FormInput, SubmitBtn } from "@/components";
 import { Button } from "@/components/ui/Button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/Card";
 import { customFetch } from "@/utils";
@@ -12,11 +12,10 @@ export const action: ActionFunction = async ({
   const formData = await request.formData();
   const data = Object.fromEntries(formData);
   try {
-    await customFetch.post("/auth/local/register", data);   
+    await customFetch.post("/auth/local/register", data);
     toast.success("Registered");
     return redirect("/login");
   } catch (error) {
-   
     const errorMsg =
       error instanceof AxiosError
         ? error.response?.data.error.message
@@ -35,12 +34,10 @@ function Register() {
         </CardHeader>
         <CardContent>
           <Form method="post">
-            <FormInput type="text" name="username"  />
+            <FormInput type="text" name="username" />
             <FormInput type="email" name="email" />
             <FormInput type="password" name="password" />
-            <Button type="submit" className="w-full mt-4">
-              Submit
-            </Button>
+            <SubmitBtn text="Register" className="w-full mt-4" />
             <p className="text-center mt-4">
               Already a member?{" "}
               <Button type="button" asChild variant="link">
