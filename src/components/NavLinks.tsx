@@ -2,13 +2,15 @@ import { useAppSelector } from "@/hooks";
 import { links } from "@/utils";
 import { NavLink } from "react-router-dom";
 
+const RESTRICTED_ROUTES = ["checkout", "orders"];
+
 const NavLinks = () => {
   const user = useAppSelector((state) => state.userState.user);
   return (
     <div className="hidden lg:flex justify-center items-center gap-x-4">
       {links.map((link) => {
-        const restrictedRoutes = link.href === "checkout" || link.href === "orders";
-        if (restrictedRoutes && !user) return null;
+        const isRestictedRoutes = RESTRICTED_ROUTES.includes(link.href);
+        if (isRestictedRoutes && !user) return null;
         return (
           <NavLink
             to={link.href}

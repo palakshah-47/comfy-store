@@ -14,7 +14,7 @@ export default function SubmitBtn({
   return (
     <Button type="submit" className={className} disabled={isSubmitting}>
       {isSubmitting ? (
-        <span className="flex">
+        <span className="flex items-center">
           <ReloadIcon className="mr-2 h-4 w-4 animate-spin"></ReloadIcon>
         </span>
       ) : (

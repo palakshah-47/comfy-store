@@ -19,7 +19,7 @@ export const action: ActionFunction = async ({
     const errorMsg =
       error instanceof AxiosError
         ? error.response?.data.error.message
-        : "Resgistration Failed";
+        : "Registration Failed";
     toast.error(errorMsg);
     return null;
   }
