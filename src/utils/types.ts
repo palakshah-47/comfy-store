@@ -67,7 +67,7 @@ export type CartItem = {
   amount: number;
   productColor: string;
   company: string;
-}
+};
 
 export type CartState = {
   cartItems: CartItem[];
@@ -76,4 +76,13 @@ export type CartState = {
   shipping: number;
   tax: number;
   orderTotal: number;
-}
+};
+
+export type Checkout = {
+  name: string;
+  address: string;
+  chargeTotal: number;
+  orderTotal: string;
+  cartItems: CartItem[];
+  numItemsInCart: number;
+};
