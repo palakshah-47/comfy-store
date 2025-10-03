@@ -1,5 +1,3 @@
-import CheckoutForm from './CheckoutForm';
-
 export { default as Header } from "./Header";
 export { default as Navbar } from "./Navbar";
 export { default as Logo } from "./Logo";
@@ -27,3 +25,5 @@ export { default as CartTotals } from "./CartTotals";
 export { default as CartItemsList } from "./CartItemsList";
 export { default as SubmitBtn } from "./SubmitBtn";
 export { default as CheckoutForm } from "./CheckoutForm";
+export { default as OrdersList } from "./OrdersList";
+export { default as ComplexPaginationContainer } from "./ComplexPaginationContainer";
