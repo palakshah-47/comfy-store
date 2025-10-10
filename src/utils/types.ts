@@ -1,4 +1,3 @@
-import SingleProduct from "../pages/SingleProduct";
 export type ProductsResponse = {
   data: Product[];
   meta: ProductsMeta;
@@ -85,4 +84,27 @@ export type Checkout = {
   orderTotal: string;
   cartItems: CartItem[];
   numItemsInCart: number;
+};
+
+export type Order = {
+  id: number;
+  attributes: {
+    address: string;
+    cartItems: CartItem[];
+    createdAt: string;
+    name: string;
+    numItemsInCart: number;
+    orderTotal: string;
+    publishedAt: string;
+    updatedAt: string;
+  };
+};
+
+export type OrdersMeta = {
+  pagination: Pagination;
+};
+
+export type OrdersResponse = {
+  data: Order[];
+  meta: OrdersMeta;
 };

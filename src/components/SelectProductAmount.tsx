@@ -1,4 +1,3 @@
-import SingleProduct from "../pages/SingleProduct";
 import {
   Select,
   SelectContent,
