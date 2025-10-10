@@ -1,4 +1,3 @@
-import SingleProduct from "../pages/SingleProduct";
 export type ProductsResponse = {
   data: Product[];
   meta: ProductsMeta;

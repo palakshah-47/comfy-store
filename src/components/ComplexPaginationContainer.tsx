@@ -17,25 +17,11 @@ import { useLocation, useLoaderData } from "react-router-dom";
 const ComplexPaginationContainer = () => {
   const { meta } = useLoaderData() as OrdersResponse;
   const { pageCount, page } = meta.pagination;
-  const { search, pathname } = useLocation();
-
-  const pages = Array.from({ length: pageCount }, (_, index) => index + 1);
+  const { search, pathname } = useLocation();  
 
   if (pageCount < 2) return null;
 
-  // const renderPagination = pages.map((pageNumber) => {
-  //   const isActive = pageNumber === page;
-  //   const url = constrcutUrl({ pageNumber, search, pathname });
-  //   return (
-  //     <PaginationItem key={pageNumber}>
-  //       <PaginationLink to={url} isActive={isActive}>
-  //         {pageNumber}
-  //       </PaginationLink>
-  //     </PaginationItem>
-  //   );
-  // });
-
-  const constructButton = ({
+ const constructButton = ({
     pageNumber,
     isActive
   }: {

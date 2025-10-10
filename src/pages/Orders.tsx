@@ -2,7 +2,7 @@ import { ReduxStore } from "@/store";
 import { customFetch, OrdersResponse } from "@/utils";
 import toast from "react-hot-toast";
 import { LoaderFunction, redirect, useLoaderData } from "react-router-dom";
-import { Pagination } from "../utils/types";
+
 import {
   ComplexPaginationContainer,
   OrdersList,
