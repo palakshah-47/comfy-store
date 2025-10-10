@@ -1,6 +1,7 @@
 import {
   Pagination,
   PaginationContent,
+  PaginationEllipsis,
   PaginationItem,
   PaginationLink,
   PaginationNext,
@@ -50,13 +51,31 @@ const ComplexPaginationContainer = () => {
       </PaginationItem>
     );
   };
+
+  const constructEllipsis = (key: string): React.ReactNode => {
+    return (
+      <PaginationItem key={key}>
+        <PaginationEllipsis />
+      </PaginationItem>
+    );
+  };
   const renderPagination = () => {
     let pages: React.ReactNode[] = [];
     //first page
     pages.push(constructButton({ pageNumber: 1, isActive: page === 1 }));
 
+    //ellipsis
+    if (page > 2) {
+      pages.push(constructEllipsis("dots-1"));
+    }
+
     if (page !== 1 && page !== pageCount)
       pages.push(constructButton({ pageNumber: page, isActive: true }));
+
+    if (page < pageCount - 1) {
+      pages.push(constructEllipsis("dots-2"));
+    }
+
     //last page
     pages.push(
       constructButton({ pageNumber: pageCount, isActive: page === pageCount })
