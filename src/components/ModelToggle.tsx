@@ -5,7 +5,7 @@ import {
   DropdownMenuTrigger,
   DropdownMenuContent,
   DropdownMenuItem
-} from "./ui/Dropdown-Menu";
+} from "./ui/DropdownMenu";
 
 import { useDispatch } from "react-redux";
 import { setTheme } from "@/slices/theme/themeSlice";
