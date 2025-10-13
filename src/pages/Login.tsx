@@ -53,8 +53,17 @@ function Login() {
 				</CardHeader>
 				<CardContent>
 					<Form method="post">
-						<FormInput type="email" label="email" name="identifier" />
-						<FormInput type="password" name="password" />
+						<FormInput
+							type="email"
+							label="email"
+							name="identifier"
+							className="dark:bg-[hsl(var(--input))] dark:border-[1px] dark:border-[#374151]"
+						/>
+						<FormInput
+							type="password"
+							name="password"
+							className="dark:bg-[hsl(var(--input))] dark:border-[1px] dark:border-[#374151]"
+						/>
 						<SubmitBtn text="Login" className="w-full mt-4" />
 						<Button
 							type="button"
