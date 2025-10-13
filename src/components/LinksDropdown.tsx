@@ -5,7 +5,7 @@ import {
 	DropdownMenuTrigger,
 } from './ui/DropdownMenu';
 import { AlignLeft } from 'lucide-react';
-import { Button } from '@/components/ui/Button';
+import { Button } from './ui/ButtonComponent';
 import { links } from '@/utils';
 import { NavLink } from 'react-router-dom';
 import { useAppSelector } from '@/hooks';
