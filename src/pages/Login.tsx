@@ -57,12 +57,12 @@ function Login() {
 							type="email"
 							label="email"
 							name="identifier"
-							className="dark:bg-[hsl(var(--input))] dark:border-[1px] dark:border-[#374151]"
+							className="dark:bg-[hsl(var(--input))] dark:border-[1px] dark:border-[color:var(--input-border)]"
 						/>
 						<FormInput
 							type="password"
 							name="password"
-							className="dark:bg-[hsl(var(--input))] dark:border-[1px] dark:border-[#374151]"
+							className="dark:bg-[hsl(var(--input))] dark:border-[1px] dark:border-[color:var(--input-border)]"
 						/>
 						<SubmitBtn text="Login" className="w-full mt-4" />
 						<Button
